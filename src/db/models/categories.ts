@@ -1,6 +1,7 @@
 import { DataTypes, Model } from 'sequelize'
 import connection from '../../config/dbConnect'
 import { ICategory, ICategoryInput } from '../../types/Categories'
+import Gifts from './Gifts'
 
 class Categories extends Model<ICategory, ICategoryInput> implements ICategory {
   public id!: string
@@ -35,5 +36,9 @@ Categories.init(
     modelName: 'categories',
   }
 )
+
+Categories.hasOne(Gifts, {
+  foreignKey: 'id',
+})
 
 export default Categories

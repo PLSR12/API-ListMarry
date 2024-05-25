@@ -9,7 +9,7 @@ module.exports = {
       'categories',
       [
         {
-          id: v4(),
+          id: '3b0e31a7-2dd2-4a01-b801-c3994cd0dd1b',
           name: 'Eletrodomesticos',
           description: 'Eletrodomesticos show show show',
           createdAt: new Date(),
