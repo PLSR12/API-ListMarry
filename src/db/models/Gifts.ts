@@ -56,8 +56,4 @@ Gifts.init(
   }
 )
 
-Gifts.belongsTo(Categories, {
-  foreignKey: 'category_id',
-})
-
 export default Gifts

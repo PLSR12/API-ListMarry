@@ -37,8 +37,4 @@ Categories.init(
   }
 )
 
-Categories.hasOne(Gifts, {
-  foreignKey: 'id',
-})
-
 export default Categories
